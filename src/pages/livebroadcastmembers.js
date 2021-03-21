@@ -74,11 +74,22 @@ export default (() => {
 				padding="0px 30px 0px 30px"
 				align-items="center"
 			/>
-			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px" />
-			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px" />
-			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px" />
-			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px" />
-			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px" />
+			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px">
+				<Override slot="text" font="--t2" />
+			</Components.DonateListeners>
+			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px">
+				<Override slot="box2" font="--t2" />
+				<Override slot="text" font="--t2" />
+			</Components.DonateListeners>
+			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px">
+				<Override slot="text" font="--t2" />
+			</Components.PlebsListener>
+			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px">
+				<Override slot="text" font="--t2" />
+			</Components.PlebsListener>
+			<Components.PlebsListener padding="30px 0px 30px 0px" lg-padding="20px 0px 20px 0px" md-padding="15px 0px 15px 0px" sm-padding="15px 0px 15px 0px">
+				<Override slot="text" font="--t2" />
+			</Components.PlebsListener>
 		</Section>
 		<Section quarkly-title="FooterSection">
 			<Box height="28px">

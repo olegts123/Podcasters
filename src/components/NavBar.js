@@ -11,7 +11,8 @@ const defaultProps = {
 	"bottom": 0,
 	"margin": "0 0 0 0",
 	"height": "auto",
-	"padding": "0 0 0 0"
+	"padding": "0 0 0 0",
+	"width": "100%"
 };
 const overrides = {
 	"box": {
@@ -100,7 +101,8 @@ const overrides = {
 			"md-margin": "-50px 0px 0px 0px",
 			"sm-margin": "-40px 0px 0px 0px",
 			"lg-width": "50px",
-			"lg-height": "50px"
+			"lg-height": "50px",
+			"background": "--color-background"
 		}
 	},
 	"icon": {
