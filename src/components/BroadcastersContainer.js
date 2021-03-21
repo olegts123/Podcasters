@@ -16,7 +16,7 @@ const BroadcastersPanel = props => {
 			            
 			<CastersSection />
 			            
-			<FooterBroadcasters onSwipeButton={() => console.log(123)} />
+			<FooterBroadcasters onClick={() => setPanel("listeners")} />
 			          
 		</Fragment> : <Fragment>
 			            

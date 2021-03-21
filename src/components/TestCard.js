@@ -92,9 +92,10 @@ const TestCard = ({
 	...props
 }) => {
 	const {
-		override
+		override,
+		rest
 	} = useOverrides(props, overrides);
-	return <Box {...override("wrapper")}>
+	return <Box {...rest}>
 		<Box {...override("card-wrapper")}>
 			<Box {...override("box")}></Box>
 			<Box {...override("box2")}>
