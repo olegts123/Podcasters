@@ -255,9 +255,9 @@ export default (() => {
 		</Section>
 		<Components.NavBar>
 			<Override slot="box1" />
-			<Override slot="link2" href="Live" />
-			<Override slot="link1" href="Home" />
-			<Override slot="SectionContent" width="100%" />
+			<Override slot="link2" />
+			<Override slot="link1" />
+			<Override slot="SectionContent" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

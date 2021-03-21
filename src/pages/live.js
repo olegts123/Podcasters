@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Section } from "@quarkly/components";
+import { Section, Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -225,7 +225,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Components.NavBar />
+		<Components.NavBar>
+			<Override slot="link1" href="Home" />
+		</Components.NavBar>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

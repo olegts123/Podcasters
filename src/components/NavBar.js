@@ -50,7 +50,6 @@ const overrides = {
 	"link1": {
 		"kind": "Link",
 		"props": {
-			"href": "#",
 			"quarkly-title": "LinkHome",
 			"background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Vector.svg?v=2021-03-21T01:19:14.820Z) 0% 0% /100% no-repeat scroll padding-box",
 			"width": "64px",
@@ -60,7 +59,8 @@ const overrides = {
 			"md-width": "38px",
 			"md-height": "38px",
 			"sm-width": "24px",
-			"sm-height": "24px"
+			"sm-height": "24px",
+			"href": "Home"
 		}
 	},
 	"box1": {
@@ -123,7 +123,6 @@ const overrides = {
 	"link2": {
 		"kind": "Link",
 		"props": {
-			"href": "#",
 			"quarkly-title": "LinkLive",
 			"width": "64px",
 			"height": "64px",
@@ -133,7 +132,13 @@ const overrides = {
 			"md-height": "38px",
 			"md-width": "38px",
 			"sm-width": "24px",
-			"sm-height": "24px"
+			"sm-height": "24px",
+			"href": "Live"
+		}
+	},
+	"SectionContent": {
+		"props": {
+			"width": "100%"
 		}
 	}
 };
