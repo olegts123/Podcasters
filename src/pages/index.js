@@ -16,11 +16,11 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="HeaderSection" lg-border-color="#000000" background="#fcfcfc">
+		<Section quarkly-title="HeaderSection" lg-border-color="#000000" background="#fcfcfc" margin="0 0 0 0">
 			<Box margin="50px 0px 0px 15px" quarkly-title="HeaderTitleBox" />
 			<Image width="250px" height="64px" src="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Podcaster.svg?v=2021-03-20T23:07:58.108Z" />
 		</Section>
-		<Section quarkly-title="SearchSection" background="--color-background">
+		<Section quarkly-title="SearchSection" background="--color-background" margin="0 0 0 0">
 			<Box quarkly-title="SearchBox" display="flex" max-width="max-content">
 				<Input
 					width="1260px"
@@ -39,15 +39,26 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Section quarkly-title="TestSection">
+			<Box>
+				<Components.TestCard
+					title="Вкус или интеллект"
+					description="Kuji podcast"
+					time="17 марта 19:00"
+					width="fit-content"
+					imageUrl="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z"
+				/>
+			</Box>
+		</Section>
 		<Section
 			quarkly-title="BodySection"
 			color="--fontGray"
 			font="--text"
 			background="--color-background"
-			padding="24px 0 48px 0"
+			padding="24px 0 150px 0"
 		>
 			<Override slot="SectionContent" />
-			<Box quarkly-title="NearestPodcasts" margin="0px 0px 40px 0px">
+			<Box quarkly-title="NearestPodcasts" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
 				<Text quarkly-title="Title" font="--t1" color="--black">
 					Ближайшие подкасты
 				</Text>
@@ -70,10 +81,23 @@ export default (() => {
 						md-min-width="250px"
 					>
 						<Override slot="StackItemContent" />
-						<Components.CardWithTime>
-							<Override slot="box1" />
-							<Override slot="box" />
-							<Override slot="box2" />
+						<Components.CardWithTime display="block" flex-direction="column">
+							<Override
+								slot="box1"
+								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+								height="110%"
+								border-radius="0%"
+								justify-content="center"
+							/>
+							<Override slot="text2" font="--text">
+								Сказки про людей{"\n\n"}
+							</Override>
+							<Override slot="text1" font="--t2" sm-font="--t3">
+								Малиновый пирог
+							</Override>
+							<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
+								19 марта 12:00
+							</Override>
 						</Components.CardWithTime>
 						{"        "}{"    "}
 					</StackItem>
@@ -85,9 +109,26 @@ export default (() => {
 						min-width="350px"
 						sm-min-width="170px"
 						md-min-width="250px"
+						justify-content="center"
+						flex-direction="column"
 					>
-						<Components.CardWithTime>
-							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box" />
+						<Components.CardWithTime display="block" flex-direction="column">
+							<Override
+								slot="box1"
+								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+								height="110%"
+								border-radius="0%"
+								justify-content="center"
+							/>
+							<Override slot="text2" font="--text">
+								Сказки про людей{"\n\n"}
+							</Override>
+							<Override slot="text1" font="--t2" sm-font="--t3">
+								Малиновый пирог
+							</Override>
+							<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
+								19 марта 12:00
+							</Override>
 						</Components.CardWithTime>
 						{"        "}{"    "}
 					</StackItem>
@@ -104,14 +145,29 @@ export default (() => {
 						md-min-width="250px"
 					>
 						<Components.CardWithTime>
-							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box" />
+							<Override
+								slot="box1"
+								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+								height="110%"
+								border-radius="0%"
+								justify-content="center"
+							/>
+							<Override slot="text2" font="--text">
+								Музы
+							</Override>
+							<Override slot="text1" font="--t2">
+								Нейросети и художники
+							</Override>
+							<Override slot="text" margin="50px 0px 0px 0px">
+								11 марта 12:30
+							</Override>
 						</Components.CardWithTime>
 						{"        "}{"    "}
 					</StackItem>
 				</Stack>
 				<Box />
 			</Box>
-			<Box quarkly-title="TopWeekPodcasters" margin="0px 0px 40px 0px">
+			<Box quarkly-title="TopWeekPodcasters" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
 				<Text quarkly-title="Title" font="--t1" color="--black">
 					Подкастеры недели
 				</Text>
@@ -138,7 +194,8 @@ export default (() => {
 							<Components.Card>
 								<Override slot="box" />
 								<Override slot="box1" />
-								<Override slot="text" />
+								<Override slot="text" font="--t2" color="--black" sm-font="450 14px --fontFamily-googleRoboto" />
+								<Override slot="text1" font="--text" />
 							</Components.Card>
 							{"        "}{"    "}
 						</StackItem>
@@ -152,7 +209,9 @@ export default (() => {
 							md-min-width="250px"
 						>
 							<Components.Card>
-								<Override slot="text" font="--t2" color="--black" />
+								<Override slot="text" font="--t2" color="--black" sm-font="--t3">
+									Потому что нельзя!
+								</Override>
 								<Override slot="text1" color="--fontGray" font="--text">
 									Максим Кац
 								</Override>
@@ -186,7 +245,7 @@ export default (() => {
 					</Stack>
 				</Box>
 			</Box>
-			<Box quarkly-title="BestLive" margin="0px 0px 40px 0px">
+			<Box quarkly-title="BestLive" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
 				<Text quarkly-title="Title" font="--t1" color="--black">
 					Лучшие эфиры
 				</Text>
@@ -211,8 +270,13 @@ export default (() => {
 						>
 							<Override slot="StackItemContent" />
 							<Components.Card>
-								<Override slot="text" font="--t2" color="--black" />
-								<Override slot="text1" color="--fontGray" font="--text" />
+								<Override slot="text" font="--t2" color="--black" sm-font="--t3">
+									Как варить варенье на огне
+								</Override>
+								<Override slot="text1" color="--fontGray" font="--text">
+									Мария Федотова
+								</Override>
+								<Override slot="box1" background="--color-filterImage url()" />
 							</Components.Card>
 							{"        "}{"    "}
 						</StackItem>
@@ -226,8 +290,12 @@ export default (() => {
 							md-min-width="250px"
 						>
 							<Components.Card>
-								<Override slot="text" font="--t2" color="--black" />
-								<Override slot="text1" color="--fontGray" font="--text" />
+								<Override slot="text" font="--t2" color="--black" sm-font="--t3">
+									Что будет если крикнуть в окно
+								</Override>
+								<Override slot="text1" color="--fontGray" font="--text">
+									Студия Подкастов
+								</Override>
 								<Override slot="box" background="rgb(85, 85, 85) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/200x200%20(1).png?v=2021-03-21T00:42:52.986Z) 0% 0% /auto repeat scroll padding-box" />
 							</Components.Card>
 							{"        "}{"    "}
@@ -246,7 +314,7 @@ export default (() => {
 						>
 							<Components.Card>
 								<Override slot="text" font="--t2" color="--black">
-									#42 IT и политика | SEGOZAVTRA{"\n\n"}
+									Политика и искусство
 								</Override>
 								<Override slot="text1" color="--fontGray" font="--text">
 									LABELSMART{"\n\n"}
@@ -259,7 +327,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Components.NavBar>
+		<Components.NavBar margin="0 0 0 0">
 			<Override slot="box1" />
 			<Override slot="link2" />
 			<Override slot="link1" width="50px" height="50px" />
@@ -273,6 +341,7 @@ export default (() => {
 			/>
 			<Override slot="link3" width="50px" height="50px" />
 		</Components.NavBar>
+		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

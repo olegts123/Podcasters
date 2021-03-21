@@ -69,7 +69,9 @@ export default {
 		"lead": "normal 300 20px/1.5 --fontFamily-sans",
 		"t1": "700 30px --fontFamily-googleRoboto",
 		"t2": "450 24px --fontFamily-googleRoboto",
-		"text": "18px --fontFamily-googleRoboto"
+		"text": "18px --fontFamily-googleRoboto",
+		"colvoLudei": "14px --fontFamily-googleRoboto",
+		"t3": "450 16px --fontFamily-googleRoboto"
 	},
 	"boxShadow": {
 		"m": "0 4px 5px -1px rgba(0, 0, 0, 0.1)",
@@ -192,5 +194,5 @@ export default {
 			}
 		}
 	},
-	"version": 90
+	"version": 96
 }

@@ -7,7 +7,7 @@ import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
-		<GlobalQuarklyPageStyles pageUrl={"livebroadcast"} />
+		<GlobalQuarklyPageStyles pageUrl={"livebroadcast1"} />
 		<Helmet>
 			<title>
 				Quarkly export
@@ -67,7 +67,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				sm-margin="0px 0 0px 0"
-				md-justify-content="space-around"
+				md-justify-content="flex-start"
 				md-height="500px"
 				lg-height="600px"
 				lg-justify-content="space-between"
@@ -95,40 +95,6 @@ export default (() => {
 					md-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/_XwDijOPNLY.jpg?v=2021-03-21T08:44:58.597Z) 0 10%/100%"
 					sm-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/_XwDijOPNLY.jpg?v=2021-03-21T08:44:58.597Z) 0 10%/100%"
 				/>
-			</Components.PodcasterCard>
-			<Components.PodcasterCard box-shadow="--shadow" background="#ffffff" sm-width="95%" sm-box-shadow="--podcasterShadow">
-				<Override slot="text" font="--t2">
-					Владимир Путин
-				</Override>
-				<Override
-					slot="box"
-					background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bb4b277b65949db59997d7938661b118.jpg?v=2021-03-21T00:35:44.602Z) bottom/100%"
-					lg-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bb4b277b65949db59997d7938661b118.jpg?v=2021-03-21T00:35:44.602Z) bottom/100%"
-					md-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bb4b277b65949db59997d7938661b118.jpg?v=2021-03-21T00:35:44.602Z) bottom/100%"
-					sm-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bb4b277b65949db59997d7938661b118.jpg?v=2021-03-21T00:35:44.602Z) bottom/100%"
-				/>
-			</Components.PodcasterCard>
-			<Components.PodcasterCard box-shadow="--shadow" background="#ffffff" sm-width="95%" sm-box-shadow="--podcasterShadow">
-				<Override
-					slot="text1"
-					sm-display="block"
-					display="block"
-					font="18px --fontFamily-googleRoboto"
-					color="--fontGray"
-				>
-					Небольшой Покемон жёлтого цвета. Он считается мышьюили белкой, но внешне он больше похож на кролика.
-				</Override>
-				<Override slot="text" font="--t2">
-					Покемон Пикачу
-				</Override>
-				<Override
-					slot="box"
-					background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Ash_Pikachu.png?v=2021-03-21T00:43:20.111Z) 0% 0%/100% no-repeat"
-					lg-background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Ash_Pikachu.png?v=2021-03-21T00:43:20.111Z) 0% 0%/100% no-repeat"
-					md-background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Ash_Pikachu.png?v=2021-03-21T00:43:20.111Z) 0% 0%/100% no-repeat"
-					sm-background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Ash_Pikachu.png?v=2021-03-21T00:43:20.111Z) 0% 0%/100% no-repeat"
-				/>
-				<Override slot="box1" font="--t2" />
 			</Components.PodcasterCard>
 		</Section>
 		<Section quarkly-title="FooterSection">
