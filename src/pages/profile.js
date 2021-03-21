@@ -24,15 +24,39 @@ export default (() => {
 				align-items="center"
 				justify-content="flex-start"
 			/>
-			<Image width="400px" height="400px" quarkly-title="Avatar" src="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%20706.png?v=2021-03-21T03:48:07.817Z" />
-			<Box width="100%" margin="0px 0px 0px 20px" padding="0px 20p 0px 0px">
+			<Image
+				width="400px"
+				height="400px"
+				quarkly-title="Avatar"
+				src="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%20706.png?v=2021-03-21T03:48:07.817Z"
+				lg-height="250px"
+				sm-width="300px"
+				sm-height="150p"
+				box-shadow="--shadow"
+			/>
+			<Box width="100%" margin="0px 0px 0px 20px" padding="0px 20p 0px 0px" height="auto">
 				<Box display="flex" align-items="center" justify-content="space-between" padding="0px 20px 0px 0px">
-					<Text quarkly-title="Name" margin="0 0px 0 0px" font="--t1">
+					<Text
+						quarkly-title="Name"
+						margin="0 0px 0 0px"
+						font="--t1"
+						md-font="--t2"
+						sm-width="100%"
+						sm-font="--t3"
+					>
 						Бесарион Чохоевич
 					</Text>
 					<Image width="30px" height="30px" src="https://uploads.quarkly.io/6056093da1e3530020715a39/images/settings%201.svg?v=2021-03-21T03:54:03.277Z" />
 				</Box>
-				<Text quarkly-title="id" margin="5px 0px 10px 0px" color="--fontGray" font="--text">
+				<Text
+					quarkly-title="id"
+					margin="5px 0px 100px 0px"
+					color="--fontGray"
+					font="--text"
+					lg-margin="5px 0px 80px 0px"
+					md-margin="5px 0px 50px 0px"
+					sm-margin="5px 0px 30px 0px"
+				>
 					@bes_bes
 				</Text>
 				<Button
@@ -43,6 +67,7 @@ export default (() => {
 					font="normal 700 16px/120% --fontFamily-sans"
 					margin="20px 0px 0px 0px"
 					height="60px"
+					box-shadow="--shadow"
 				>
 					Оформить подписку
 				</Button>
@@ -60,7 +85,7 @@ export default (() => {
 				justify-content="space-around"
 				flex-wrap="wrap"
 				lg-justify-content="space-between"
-				sm-justify-content="space-between"
+				sm-justify-content="flex-start"
 				sm-flex-wrap="wrap"
 				md-flex-wrap="wrap"
 				md-justify-content="space-between"
@@ -174,10 +199,11 @@ export default (() => {
 			</Box>
 		</Section>
 		<Components.NavBar>
-			<Override slot="box" background="#ffffff" />
+			<Override slot="box" background="#ffffff" box-shadow="--shadow" />
 			<Override slot="link" width="50px" />
 			<Override slot="link1" width="50px" />
 			<Override slot="link3" width="50px" />
+			<Override slot="link2" box-shadow="--shadow" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}
