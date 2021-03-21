@@ -6,7 +6,6 @@ const defaultProps = {
 	"box-sizing": "border-box",
 	"sm-justify-content": "flex-end",
 	"sm-position": "relative",
-	"sm-box-shadow": ",--podcasterShadow",
 	"md-height": "auto",
 	"md-box-shadow": "--podcasterShadow",
 	"md-align-items": "center",
@@ -21,7 +20,6 @@ const defaultProps = {
 	"width": "100%",
 	"height": "auto",
 	"border-radius": "25px",
-	"box-shadow": "--podcasterShadow",
 	"display": "flex",
 	"align-items": "center",
 	"justify-content": "flex-end",
@@ -35,7 +33,10 @@ const defaultProps = {
 	"lg-padding": "40px 0px 40px 0px",
 	"lg-min-height": "130px",
 	"min-height": "160px",
-	"padding": "50px 0px 50px 0px"
+	"padding": "50px 0px 50px 0px",
+	"sm-box-shadow": "--podcastShadowActive",
+	"box-shadow": "--podcastShadowActive",
+	"transition": "all 0.2s ease 0s"
 };
 const overrides = {
 	"box": {
@@ -64,12 +65,12 @@ const overrides = {
 			"left": 0,
 			"width": "160px",
 			"height": "160px",
-			"background": "#838383",
 			"border-radius": "25px",
 			"sm-top": 0,
 			"md-top": 0,
 			"lg-top": 0,
-			"top": 0
+			"top": 0,
+			"background": "#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bbadfd5684fdbc4c0c1006cf1b9a9b7d.jpg?v=2021-03-21T00:33:25.501Z) top/100%"
 		}
 	},
 	"box1": {
@@ -115,7 +116,7 @@ const overrides = {
 			"sm-margin": "0 0px 0 0px",
 			"md-margin": "0 0px 0 0px",
 			"lg-margin": "0 0px 0 0px",
-			"children": "Владимир Путин"
+			"children": "Анастасия Ивлеева"
 		}
 	},
 	"text1": {

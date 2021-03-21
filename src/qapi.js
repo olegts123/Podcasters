@@ -11,7 +11,7 @@ export default {
 				"60563842f2b826001ebe89fc",
 				"60563f0cf11f97001e812177",
 				"605661fb36274f001fc8d978",
-				"6056ae7f36274f001fc8dbd0"
+				"6056b53c36274f001fc8dbf2"
 			]
 		},
 		"6056093da1e3530020715a3c": {
@@ -44,10 +44,10 @@ export default {
 			"pageUrl": "createbroadcast",
 			"name": "CreateBroadcast"
 		},
-		"6056ae7f36274f001fc8dbd0": {
-			"id": "6056ae7f36274f001fc8dbd0",
-			"pageUrl": "pageregistertranslation",
-			"name": "PageRegisterTranslation"
+		"6056b53c36274f001fc8dbf2": {
+			"id": "6056b53c36274f001fc8dbf2",
+			"pageUrl": "profile",
+			"name": "Profile"
 		}
 	},
 	"mode": "production",

@@ -41,7 +41,13 @@ export default {
 		"shadowActivePodcaster": "#FED851",
 		"black": "#000000",
 		"background": "#fcfcfc",
-		"filterImage": "rgba(255, 193, 7, 0.43)"
+		"filterImage": "rgba(255, 193, 7, 0.43)",
+		"purpleTag": "#6D14C6",
+		"greenTag": "#14C65B",
+		"darkPurpleTag": "#44406F",
+		"yellowTag": "#FAD205",
+		"redTag": "#FA3105",
+		"subscribe": " #FED851"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -70,7 +76,7 @@ export default {
 		"l": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
 		"xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
 		"xxl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-		"podcasterShadow": "6px 4px 10px rgba(237, 218, 255, 0.6)",
+		"podcasterShadow": "6px 4px 10px rgba(237, 218, 255, 0.8)",
 		"podcastShadowActive": "0 0 10px --color-shadowActivePodcaster"
 	},
 	"background": {
@@ -185,5 +191,5 @@ export default {
 			}
 		}
 	},
-	"version": 78
+	"version": 90
 }

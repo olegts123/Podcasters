@@ -17,7 +17,7 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section quarkly-title="HeaderSection" lg-border-color="#000000" background="#fcfcfc">
-			<Box margin="70px 0px 0px 20px" quarkly-title="HeaderTitleBox" />
+			<Box margin="50px 0px 0px 15px" quarkly-title="HeaderTitleBox" />
 			<Image width="250px" height="64px" src="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Podcaster.svg?v=2021-03-20T23:07:58.108Z" />
 		</Section>
 		<Section quarkly-title="SearchSection" background="--color-background">
@@ -39,7 +39,13 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section quarkly-title="BodySection" color="--fontGray" font="--text" background="--color-background">
+		<Section
+			quarkly-title="BodySection"
+			color="--fontGray"
+			font="--text"
+			background="--color-background"
+			padding="24px 0 48px 0"
+		>
 			<Override slot="SectionContent" />
 			<Box quarkly-title="NearestPodcasts" margin="0px 0px 40px 0px">
 				<Text quarkly-title="Title" font="--t1" color="--black">
@@ -258,6 +264,7 @@ export default (() => {
 			<Override slot="link2" />
 			<Override slot="link1" />
 			<Override slot="SectionContent" />
+			<Override slot="link" hover-opacity="1" cursor="default" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

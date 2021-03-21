@@ -9,7 +9,7 @@ const pageStyles = {
     "livebroadcast": {},
     "livebroadcastmembers": {},
     "createbroadcast": {},
-    "pageregistertranslation": {}
+    "profile": {}
 };
 
 const PageStyles = createGlobalStyle`

@@ -4,7 +4,7 @@ import Live from "pages/live";
 import Livebroadcast from "pages/livebroadcast";
 import Livebroadcastmembers from "pages/livebroadcastmembers";
 import Createbroadcast from "pages/createbroadcast";
-import Pageregistertranslation from "pages/pageregistertranslation";
+import Profile from "pages/profile";
 import Page404 from "pages/page404";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
@@ -27,7 +27,7 @@ export default () => (
 			<Route exact path='/livebroadcast' component={Livebroadcast}/>
 			<Route exact path='/livebroadcastmembers' component={Livebroadcastmembers}/>
 			<Route exact path='/createbroadcast' component={Createbroadcast}/>
-			<Route exact path='/pageregistertranslation' component={Pageregistertranslation}/>
+			<Route exact path='/profile' component={Profile}/>
 			<Route component={Page404}/>
         </Switch>
     </Router>

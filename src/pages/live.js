@@ -16,13 +16,13 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section quarkly-title="HeaderSection">
-			<Box quarkly-title="HeaderTitleBox" margin="70px 0px 0px 20px" font="--t1">
+			<Box quarkly-title="HeaderTitleBox" margin="50px 0px 0px 15px" font="--t1">
 				<Text quarkly-title="Title">
 					Сейчас в эфире
 				</Text>
 			</Box>
 		</Section>
-		<Section quarkly-title="Main" background="#ffffff" height="1300px" flex-wrap="wrap">
+		<Section quarkly-title="Main" background="#ffffff" flex-wrap="wrap">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -104,11 +104,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22
-						<br />
-						{" "}:
-						<br />
-						{" "}00
+						22:00
 					</Text>
 				</Box>
 			</Box>
@@ -186,11 +182,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22
-						<br />
-						{" "}:
-						<br />
-						{" "}00
+						22:00
 					</Text>
 				</Box>
 			</Box>
@@ -268,11 +260,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22
-						<br />
-						{" "}:
-						<br />
-						{" "}00
+						22:00
 					</Text>
 				</Box>
 			</Box>
@@ -350,11 +338,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22
-						<br />
-						{" "}:
-						<br />
-						{" "}00
+						22:00
 					</Text>
 				</Box>
 			</Box>
@@ -363,6 +347,8 @@ export default (() => {
 			<Override slot="link1" />
 			<Override slot="box" />
 			<Override slot="SectionContent" />
+			<Override slot="createBroadcastLink" border-radius="50%" />
+			<Override slot="icon" top="16%" left="20%" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

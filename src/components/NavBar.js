@@ -34,7 +34,6 @@ const overrides = {
 	"link": {
 		"kind": "Link",
 		"props": {
-			"href": "#",
 			"quarkly-title": "LinkProfile",
 			"background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_2021-03-20_192233%201.svg?v=2021-03-21T01:19:14.821Z) 0% 0% /100% no-repeat scroll padding-box",
 			"width": "64px",
@@ -44,7 +43,8 @@ const overrides = {
 			"md-width": "38px",
 			"md-height": "38px",
 			"sm-width": "24px",
-			"sm-height": "24px"
+			"sm-height": "24px",
+			"href": "Profile"
 		}
 	},
 	"link1": {
@@ -63,46 +63,28 @@ const overrides = {
 			"href": "index"
 		}
 	},
-	"box1": {
-		"kind": "Box",
+	"link2": {
+		"kind": "Link",
 		"props": {
-			"quarkly-title": "StartLive",
-			"lg-display": "flex",
-			"lg-background": "--color-background",
-			"lg-border-radius": "50%",
-			"lg-right": "10px",
-			"lg-border-width": "10px",
-			"lg-border-style": "solid",
-			"lg-border-color": "rgba(0, 0, 0, 0)",
-			"lg-hover-cursor": "pointer",
-			"position": "static",
-			"bottom": "auto",
-			"right": "297px",
-			"cursor": "pointer",
-			"border-width": "10px",
-			"border-style": "solid",
-			"border-color": "rgba(0, 0, 0, 0)",
+			"href": "CreateBroadcast",
+			"width": "80px",
+			"height": "80px",
 			"border-radius": "50%",
-			"box-shadow": "--podcasterShadow",
-			"width": "64px",
-			"height": "64px",
+			"background": "--color-background",
 			"display": "flex",
-			"flex-direction": "column",
 			"align-items": "center",
 			"justify-content": "center",
-			"top": "-47px",
-			"left": "auto",
+			"box-shadow": "--podcasterShadow",
 			"margin": "-60px 0px 0px 0px",
-			"md-width": "38px",
-			"md-height": "38px",
-			"sm-width": "24px",
-			"sm-height": "24px",
-			"lg-margin": "-55px 0px 0px 0px",
-			"md-margin": "-50px 0px 0px 0px",
-			"sm-margin": "-40px 0px 0px 0px",
-			"lg-width": "50px",
-			"lg-height": "50px",
-			"background": "--color-background"
+			"quarkly-title": "LinkRoom",
+			"lg-width": "64px",
+			"lg-height": "64px",
+			"md-width": "52px",
+			"md-height": "52px",
+			"lg-margin": "-50px 0px 0px 0px",
+			"sm-width": "40px",
+			"sm-height": "40px",
+			"sm-margin": "-35px 0px 0px 0px"
 		}
 	},
 	"icon": {
@@ -120,7 +102,7 @@ const overrides = {
 			"sm-font": "24px sans-serif"
 		}
 	},
-	"link2": {
+	"link3": {
 		"kind": "Link",
 		"props": {
 			"quarkly-title": "LinkLive",
@@ -135,12 +117,6 @@ const overrides = {
 			"sm-height": "24px",
 			"href": "Live"
 		}
-	},
-	"SectionContent": {
-		"props": {
-			"width": "100%",
-			"max-width": "100%"
-		}
 	}
 };
 
@@ -151,14 +127,20 @@ const NavBar = props => {
 		rest
 	} = useOverrides(props, overrides, defaultProps);
 	return <Section {...rest}>
-		<Override slot="SectionContent" margin="0px 0 0px 0" width="100%" height="100%" />
+		<Override
+			slot="SectionContent"
+			margin="0px 0 0px 0"
+			width="100%"
+			height="100%"
+			max-width="100%"
+		/>
 		<Box {...override("box")}>
 			<Link {...override("link")} />
 			<Link {...override("link1")} />
-			<Box {...override("box1")}>
+			<Link {...override("link2")}>
 				<Icon {...override("icon")} />
-			</Box>
-			<Link {...override("link2")} />
+			</Link>
+			<Link {...override("link3")} />
 		</Box>
 		{children}
 	</Section>;

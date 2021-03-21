@@ -21,7 +21,7 @@ export default (() => {
 			<Override slot="SectionContent" />
 			<Box
 				quarkly-title="HeaderTitleBox"
-				margin="75px 0px 0px 0px"
+				margin="50px 0px 0px 15px"
 				sm-display="flex"
 				sm-align-items="center"
 				sm-justify-content="start"
@@ -71,11 +71,9 @@ export default (() => {
 				justify-content="space-between"
 				height="800px"
 			/>
-			<Components.PodcasterCard sm-box-shadow="--podcastShadowActive" box-shadow="--podcastShadowActive">
-				<Override slot="text">
-					Анастасия Ивлеева
-				</Override>
-				<Override slot="box" background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bbadfd5684fdbc4c0c1006cf1b9a9b7d.jpg?v=2021-03-21T00:33:25.501Z) top/100%" />
+			<Components.PodcasterCard>
+				<Override slot="text" />
+				<Override slot="box" />
 			</Components.PodcasterCard>
 			<Components.PodcasterCard>
 				<Override slot="text" />
