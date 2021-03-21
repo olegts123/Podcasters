@@ -15,14 +15,14 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="HeaderSection">
+		<Section quarkly-title="HeaderSection" background="--color-background">
 			<Box quarkly-title="HeaderTitleBox" margin="50px 0px 0px 15px" font="--t1">
 				<Text quarkly-title="Title">
 					Сейчас в эфире
 				</Text>
 			</Box>
 		</Section>
-		<Section quarkly-title="Main" background="#ffffff" flex-wrap="wrap">
+		<Section quarkly-title="Main" background="--color-background" flex-wrap="wrap">
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -77,8 +77,8 @@ export default (() => {
 				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2" sm-font="450 18px Roboto, sans-serif">
 					<Box height="30px" display="flex" justify-content="left" quarkly-title="UpperRow">
 						<Image
-							width="5px"
-							height="5px"
+							width="3px"
+							height="3px"
 							margin="auto 10px auto 5px"
 							quarkly-title="RedPoint"
 							background="#ff0404"
@@ -161,8 +161,8 @@ export default (() => {
 				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2">
 					<Box height="30px" display="flex" justify-content="left" quarkly-title="UpperRow">
 						<Image
-							width="5px"
-							height="5px"
+							width="3px"
+							height="3px"
 							margin="auto 10px auto 5px"
 							quarkly-title="RedPoint"
 							background="#ff0404"
@@ -245,8 +245,8 @@ export default (() => {
 				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2">
 					<Box height="30px" display="flex" justify-content="left" quarkly-title="UpperRow">
 						<Image
-							width="5px"
-							height="5px"
+							width="3px"
+							height="3px"
 							margin="auto 10px auto 5px"
 							quarkly-title="RedPoint"
 							background="#ff0404"
@@ -329,8 +329,8 @@ export default (() => {
 				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2">
 					<Box height="30px" display="flex" justify-content="left" quarkly-title="UpperRow">
 						<Image
-							width="5px"
-							height="5px"
+							width="3px"
+							height="3px"
 							margin="auto 10px auto 5px"
 							quarkly-title="RedPoint"
 							background="#ff0404"
@@ -356,18 +356,20 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22:00
+						12+
 					</Text>
 				</Box>
 			</Box>
 		</Section>
 		<Components.NavBar>
-			<Override slot="link1" />
+			<Override slot="link1" width="50px" height="50px" />
 			<Override slot="box" />
 			<Override slot="SectionContent" />
 			<Override slot="createBroadcastLink" margin="-60px 0px 0px 0px" />
 			<Override slot="icon" top="16%" left="20%" />
 			<Override slot="box1" margin="0px 0px 0px 0px" />
+			<Override slot="link" width="50px" height="50px" />
+			<Override slot="link3" width="50px" height="50px" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

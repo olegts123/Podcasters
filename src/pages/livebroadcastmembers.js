@@ -16,7 +16,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section quarkly-title="HeaderSection">
+		<Section quarkly-title="HeaderSection" background="--color-background">
 			<Box
 				quarkly-title="HeaderTitleBox"
 				margin="50px 4px 0px 0px"
@@ -74,8 +74,9 @@ export default (() => {
 				padding="0px 30px 0px 30px"
 				align-items="center"
 			/>
-			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px">
-				<Override slot="text" font="--t2" />
+			<Components.DonateListeners>
+				<Override slot="text" />
+				<Override slot="box" />
 			</Components.DonateListeners>
 			<Components.DonateListeners margin="0px 0px 40px 0px" lg-margin="0px 0px 30px 0px" sm-margin="0px 0px 10px 0px" md-margin="0px 0px 20px 0px">
 				<Override slot="box2" font="--t2" />

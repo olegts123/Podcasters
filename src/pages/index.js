@@ -262,9 +262,16 @@ export default (() => {
 		<Components.NavBar>
 			<Override slot="box1" />
 			<Override slot="link2" />
-			<Override slot="link1" />
+			<Override slot="link1" width="50px" height="50px" />
 			<Override slot="SectionContent" />
-			<Override slot="link" hover-opacity="1" cursor="default" />
+			<Override
+				slot="link"
+				hover-opacity="1"
+				cursor="default"
+				width="50px"
+				height="50px"
+			/>
+			<Override slot="link3" width="50px" height="50px" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

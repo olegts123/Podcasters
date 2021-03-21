@@ -86,7 +86,8 @@ export default (() => {
 				margin="0px 0px 40px 0px"
 				md-padding="15px 15px 15px 15px"
 				md-margin="0px 0px 30px 0px"
-				height="130px"
+				as="textarea"
+				height="120px"
 			/>
 			<Button
 				width="300px"
@@ -102,7 +103,11 @@ export default (() => {
 				Начать
 			</Button>
 		</Section>
-		<Components.NavBar />
+		<Components.NavBar>
+			<Override slot="link" width="50px" height="50px" />
+			<Override slot="link1" width="50px" height="50px" />
+			<Override slot="link3" width="50px" height="50px" />
+		</Components.NavBar>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

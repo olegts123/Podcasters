@@ -60,6 +60,7 @@ export default (() => {
 			md-justify-content="space-evenly"
 			sm-height="auto"
 			sm-min-height="500px"
+			display="block"
 		>
 			<Override
 				slot="SectionContent"
@@ -71,7 +72,7 @@ export default (() => {
 				justify-content="space-between"
 				height="800px"
 			/>
-			<Components.PodcasterCard>
+			<Components.PodcasterCard display="flex">
 				<Override slot="text" />
 				<Override slot="box" />
 			</Components.PodcasterCard>
