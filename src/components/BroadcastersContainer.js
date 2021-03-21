@@ -1,13 +1,13 @@
+import CastersSection from "./CastersSection";
+import ListenersSection from "./ListenersSection";
+import FooterListeners from "./FooterListeners";
+import FooterBroadcasters from "./Footer";
 import React, { useState, Fragment } from 'react';
 import atomize from "@quarkly/atomize";
 import { AudioController } from "hackaton-uikit-audio-controller";
 const controller = new AudioController("https://syleront.cf:4444", 4096, 16, 12);
 controller.connect();
 console.log("Micropohe state: ", controller.isSpeakEnabled());
-import CastersSection from "./CastersSection";
-import ListenersSection from "./ListenersSection";
-import FooterListeners from "./FooterListeners";
-import FooterBroadcasters from "./Footer";
 
 const BroadcastersContainer = props => {
 	const [panel, setPanel] = useState("broadcasters");
