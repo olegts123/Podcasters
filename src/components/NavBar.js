@@ -25,10 +25,10 @@ const overrides = {
 			"position": "relative",
 			"margin": "0 0px 0px 0px",
 			"box-shadow": "--podcasterShadow",
-			"width": "100%",
 			"height": "100%",
 			"padding": "20px 0px 20px 0px",
-			"background": "--color-background"
+			"background": "--color-background",
+			"width": "100%"
 		}
 	},
 	"link": {
@@ -60,7 +60,7 @@ const overrides = {
 			"md-height": "38px",
 			"sm-width": "24px",
 			"sm-height": "24px",
-			"href": "Home"
+			"href": "index"
 		}
 	},
 	"box1": {
@@ -138,7 +138,8 @@ const overrides = {
 	},
 	"SectionContent": {
 		"props": {
-			"width": "100%"
+			"width": "100%",
+			"max-width": "100%"
 		}
 	}
 };

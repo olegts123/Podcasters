@@ -22,16 +22,16 @@ export default (() => {
 				</Text>
 			</Box>
 		</Section>
-		<Section quarkly-title="Main" background="#ffffff" height="1300px">
+		<Section quarkly-title="Main" background="#ffffff" height="1300px" flex-wrap="wrap">
 			<Box
-				width="90%"
+				width="40%"
 				height="362px"
 				margin="10px auto 50px auto"
 				background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/image%202.svg?v=2021-03-21T00:59:45.882Z) 0% 50%/100% repeat-x"
 				border-radius="20px"
 				box-shadow="--podcasterShadow"
 				align-self="center"
-				display="flex"
+				display="block"
 				flex-direction="column"
 				justify-content="center"
 				quarkly-title="StackElements"
@@ -91,14 +91,14 @@ export default (() => {
 				</Box>
 			</Box>
 			<Box
-				width="670px"
+				width="40%"
 				height="362px"
 				margin="10px auto 50px auto"
 				background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/image%202.svg?v=2021-03-21T00:59:45.882Z) 0% 50%/100% repeat-x"
 				border-radius="20px"
 				box-shadow="--podcasterShadow"
 				align-self="center"
-				display="flex"
+				display="block"
 				flex-direction="column"
 				justify-content="center"
 				quarkly-title="StackElements"
@@ -158,14 +158,14 @@ export default (() => {
 				</Box>
 			</Box>
 			<Box
-				width="670px"
+				width="40%"
 				height="362px"
 				margin="10px auto 50px auto"
 				background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/image%202.svg?v=2021-03-21T00:59:45.882Z) 0% 50%/100% repeat-x"
 				border-radius="20px"
 				box-shadow="--podcasterShadow"
 				align-self="center"
-				display="flex"
+				display="block"
 				flex-direction="column"
 				justify-content="center"
 				quarkly-title="StackElements"
@@ -226,9 +226,9 @@ export default (() => {
 			</Box>
 		</Section>
 		<Components.NavBar>
-			<Override slot="link1" href="index" />
-			<Override slot="box" width="100%" />
-			<Override slot="SectionContent" max-width="100%" />
+			<Override slot="link1" />
+			<Override slot="box" />
+			<Override slot="SectionContent" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}
