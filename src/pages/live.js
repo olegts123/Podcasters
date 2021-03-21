@@ -74,7 +74,7 @@ export default (() => {
 					sm-width="120px"
 					sm-height="120px"
 				/>
-				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2">
+				<Box quarkly-title="TextBlock" margin="0px 40px 0px 40px" font="--t2" sm-font="450 18px Roboto, sans-serif">
 					<Box height="30px" display="flex" justify-content="left" quarkly-title="UpperRow">
 						<Image
 							width="5px"
@@ -92,7 +92,7 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px">
+					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -164,13 +164,13 @@ export default (() => {
 							border-color="#ffffff"
 							border-radius="50%"
 						/>
-						<Text margin="auto 0px auto 0px" quarkly-title="PodcastName">
+						<Text margin="auto 0px auto 0px" quarkly-title="PodcastName" sm-font="450 18px Roboto, sans-serif">
 							Женщина, вы кто?{"\n\n"}
 						</Text>
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px">
+					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -242,13 +242,13 @@ export default (() => {
 							border-color="#ffffff"
 							border-radius="50%"
 						/>
-						<Text margin="auto 0px auto 0px" quarkly-title="PodcastName">
+						<Text margin="auto 0px auto 0px" quarkly-title="PodcastName" sm-font="450 18px Roboto, sans-serif">
 							Женщина, вы кто?{"\n\n"}
 						</Text>
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px">
+					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -347,8 +347,9 @@ export default (() => {
 			<Override slot="link1" />
 			<Override slot="box" />
 			<Override slot="SectionContent" />
-			<Override slot="createBroadcastLink" border-radius="50%" />
+			<Override slot="createBroadcastLink" margin="-60px 0px 0px 0px" />
 			<Override slot="icon" top="16%" left="20%" />
+			<Override slot="box1" margin="0px 0px 0px 0px" />
 		</Components.NavBar>
 		<Link
 			font={"--capture"}

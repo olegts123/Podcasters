@@ -96,9 +96,17 @@ export default (() => {
 			<Text font="600 28px sans-serif">
 				Мои подписки
 			</Text>
-			<Box quarkly-title="Container" display="flex" width="100%" justify-content="space-around">
-				<Components.FollowerCard />
-				<Components.FollowerCard>
+			<Box
+				quarkly-title="Container"
+				display="flex"
+				width="100%"
+				justify-content="space-around"
+				sm-flex-wrap="nowrap"
+				sm-justify-content="space-around"
+				sm-align-items="flex-start"
+			>
+				<Components.FollowerCard sm-width="120px" sm-margin="0px 0px 15px 0px" />
+				<Components.FollowerCard sm-width="120px">
 					<Override slot="text">
 						KUJ-podcast
 					</Override>
@@ -110,7 +118,7 @@ export default (() => {
 						sm-background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%20708.png?v=2021-03-21T03:08:17.607Z) -5px/120% no-repeat"
 					/>
 				</Components.FollowerCard>
-				<Components.FollowerCard>
+				<Components.FollowerCard sm-width="120px">
 					<Override slot="text">
 						Одно расстройство
 					</Override>
@@ -122,7 +130,7 @@ export default (() => {
 						sm-background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%20709.png?v=2021-03-21T03:08:17.611Z) -5px/120% no-repeat"
 					/>
 				</Components.FollowerCard>
-				<Components.FollowerCard>
+				<Components.FollowerCard sm-width="120px" sm-display="none">
 					<Override slot="text">
 						Так вышло
 					</Override>
