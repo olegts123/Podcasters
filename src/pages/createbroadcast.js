@@ -86,6 +86,7 @@ export default (() => {
 				margin="0px 0px 40px 0px"
 				md-padding="15px 15px 15px 15px"
 				md-margin="0px 0px 30px 0px"
+				height="130px"
 			/>
 			<Button
 				width="300px"

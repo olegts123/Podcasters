@@ -92,7 +92,13 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
+					<Text
+						font="--text"
+						margin="0px 0px 0px 0px"
+						lg-height="50px"
+						sm-font="16px Roboto, sans-serif"
+						width="300px"
+					>
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -104,7 +110,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22:00
+						345+
 					</Text>
 				</Box>
 			</Box>
@@ -170,7 +176,13 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
+					<Text
+						font="--text"
+						margin="0px 0px 0px 0px"
+						lg-height="50px"
+						sm-font="16px Roboto, sans-serif"
+						width="320px"
+					>
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -182,7 +194,7 @@ export default (() => {
 						md-margin="0 0px 0px 100px"
 						md-height="60px"
 					>
-						22:00
+						1234+
 					</Text>
 				</Box>
 			</Box>
@@ -248,7 +260,13 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" sm-font="16px Roboto, sans-serif">
+					<Text
+						font="--text"
+						margin="0px 0px 0px 0px"
+						lg-height="50px"
+						sm-font="16px Roboto, sans-serif"
+						width="300px"
+					>
 						Анастасия Ивлеева
 					</Text>
 					<Text
@@ -326,7 +344,7 @@ export default (() => {
 					</Box>
 				</Box>
 				<Box quarkly-title="LowLine" height="30px" margin="5px 40px 0px 70px" display="flex">
-					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px">
+					<Text font="--text" margin="0px 0px 0px 0px" lg-height="50px" width="300px">
 						Анастасия Ивлеева
 					</Text>
 					<Text
