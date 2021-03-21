@@ -39,17 +39,6 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section quarkly-title="TestSection">
-			<Box>
-				<Components.TestCard
-					title="Вкус или интеллект"
-					description="Kuji podcast"
-					time="17 марта 19:00"
-					width="fit-content"
-					imageUrl="https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z"
-				/>
-			</Box>
-		</Section>
 		<Section
 			quarkly-title="BodySection"
 			color="--fontGray"
@@ -58,119 +47,142 @@ export default (() => {
 			padding="24px 0 150px 0"
 		>
 			<Override slot="SectionContent" />
-			<Box quarkly-title="NearestPodcasts" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
+			<Stack
+				sm-flex-wrap="nowrap"
+				sm-justify-content="space-between"
+				md-justify-content="space-between"
+				md-flex-wrap="nowrap"
+				justify-content="space-between"
+				flex-wrap="nowrap"
+				sm-padding="0px 10px 0px 10px"
+			>
+				{"    "}
+				<StackItem
+					display="flex"
+					sm-padding="16px 0 16px 0"
+					width="auto"
+					min-width="350px"
+					sm-min-width="170px"
+					md-min-width="250px"
+				>
+					<Override slot="StackItemContent" />
+					<Components.CardWithTime display="block" flex-direction="column">
+						<Override
+							slot="box1"
+							background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+							height="110%"
+							border-radius="0%"
+							justify-content="center"
+						/>
+						<Override slot="text2" font="--text">
+							Сказки про людей{"\n\n"}
+						</Override>
+						<Override slot="text1" font="--t2" sm-font="--t3">
+							Малиновый пирог
+						</Override>
+						<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
+							19 марта 12:00
+						</Override>
+					</Components.CardWithTime>
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+				<StackItem
+					display="flex"
+					sm-padding="16px 0 16px 0"
+					width="auto"
+					min-width="350px"
+					sm-min-width="170px"
+					md-min-width="250px"
+					justify-content="center"
+					flex-direction="column"
+				>
+					<Components.CardWithTime display="block" flex-direction="column">
+						<Override
+							slot="box1"
+							background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+							height="110%"
+							border-radius="0%"
+							justify-content="center"
+						/>
+						<Override slot="text2" font="--text">
+							Сказки про людей{"\n\n"}
+						</Override>
+						<Override slot="text1" font="--t2" sm-font="--t3">
+							Малиновый пирог
+						</Override>
+						<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
+							19 марта 12:00
+						</Override>
+					</Components.CardWithTime>
+					{"        "}{"    "}
+				</StackItem>
+				<StackItem
+					display="flex"
+					sm-padding="16px 0 16px 0"
+					md-overflow-x="hidden"
+					width="auto"
+					overflow-x="hidden"
+					overflow-y="hidden"
+					min-width="350px"
+					lg-display="none"
+					sm-min-width="170px"
+					md-min-width="250px"
+				>
+					<Components.CardWithTime>
+						<Override
+							slot="box1"
+							background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
+							height="110%"
+							border-radius="0%"
+							justify-content="center"
+						/>
+						<Override slot="text2" font="--text">
+							Музы
+						</Override>
+						<Override slot="text1" font="--t2">
+							Нейросети и художники
+						</Override>
+						<Override slot="text" margin="50px 0px 0px 0px">
+							11 марта 12:30
+						</Override>
+					</Components.CardWithTime>
+					{"        "}{"    "}
+				</StackItem>
+			</Stack>
+			<Box
+				quarkly-title="NearestPodcasts"
+				margin="0px 0px 10px 0px"
+				md-margin="0px 0px 80px 0px"
+				display="block"
+				flex-wrap="wrap"
+				justify-content="space-between"
+			>
 				<Text quarkly-title="Title" font="--t1" color="--black">
 					Ближайшие подкасты
 				</Text>
-				<Stack
-					sm-flex-wrap="nowrap"
-					sm-justify-content="space-between"
-					md-justify-content="space-between"
-					md-flex-wrap="nowrap"
-					justify-content="space-between"
-					flex-wrap="nowrap"
-					sm-padding="0px 10px 0px 10px"
-				>
-					{"    "}
-					<StackItem
-						display="flex"
-						sm-padding="16px 0 16px 0"
-						width="auto"
-						min-width="350px"
-						sm-min-width="170px"
-						md-min-width="250px"
-					>
-						<Override slot="StackItemContent" />
-						<Components.CardWithTime display="block" flex-direction="column">
-							<Override
-								slot="box1"
-								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
-								height="110%"
-								border-radius="0%"
-								justify-content="center"
-							/>
-							<Override slot="text2" font="--text">
-								Сказки про людей{"\n\n"}
-							</Override>
-							<Override slot="text1" font="--t2" sm-font="--t3">
-								Малиновый пирог
-							</Override>
-							<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
-								19 марта 12:00
-							</Override>
-						</Components.CardWithTime>
-						{"        "}{"    "}
-					</StackItem>
-					{"    "}
-					<StackItem
-						display="flex"
-						sm-padding="16px 0 16px 0"
-						width="auto"
-						min-width="350px"
-						sm-min-width="170px"
-						md-min-width="250px"
-						justify-content="center"
-						flex-direction="column"
-					>
-						<Components.CardWithTime display="block" flex-direction="column">
-							<Override
-								slot="box1"
-								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
-								height="110%"
-								border-radius="0%"
-								justify-content="center"
-							/>
-							<Override slot="text2" font="--text">
-								Сказки про людей{"\n\n"}
-							</Override>
-							<Override slot="text1" font="--t2" sm-font="--t3">
-								Малиновый пирог
-							</Override>
-							<Override slot="text" margin="50px 0px 0px 0px" max-height="100%">
-								19 марта 12:00
-							</Override>
-						</Components.CardWithTime>
-						{"        "}{"    "}
-					</StackItem>
-					<StackItem
-						display="flex"
-						sm-padding="16px 0 16px 0"
-						md-overflow-x="hidden"
-						width="auto"
-						overflow-x="hidden"
-						overflow-y="hidden"
-						min-width="350px"
-						lg-display="none"
-						sm-min-width="170px"
-						md-min-width="250px"
-					>
-						<Components.CardWithTime>
-							<Override
-								slot="box1"
-								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
-								height="110%"
-								border-radius="0%"
-								justify-content="center"
-							/>
-							<Override slot="text2" font="--text">
-								Музы
-							</Override>
-							<Override slot="text1" font="--t2">
-								Нейросети и художники
-							</Override>
-							<Override slot="text" margin="50px 0px 0px 0px">
-								11 марта 12:30
-							</Override>
-						</Components.CardWithTime>
-						{"        "}{"    "}
-					</StackItem>
-				</Stack>
-				<Box />
+				<Box display="flex" flex-wrap="wrap" justify-content="space-between">
+					<Components.TestCard />
+					<Components.TestCard />
+					<Components.TestCard />
+				</Box>
 			</Box>
-			<Box quarkly-title="TopWeekPodcasters" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
+			<Box
+				quarkly-title="TopWeekPodcasters"
+				margin="0px 0px 10px 0px"
+				md-margin="0px 0px 80px 0px"
+				flex-wrap="wrap"
+				display="block"
+				justify-content="space-between"
+			>
 				<Text quarkly-title="Title" font="--t1" color="--black">
-					Подкастеры недели
+					Лучшие эфиры
 				</Text>
+				<Box display="flex" flex-wrap="wrap" justify-content="space-between">
+					<Components.TestCard />
+					<Components.TestCard />
+					<Components.TestCard />
+				</Box>
 				<Box>
 					<Stack
 						sm-flex-wrap="nowrap"
@@ -245,10 +257,22 @@ export default (() => {
 					</Stack>
 				</Box>
 			</Box>
-			<Box quarkly-title="BestLive" margin="0px 0px 10px 0px" md-margin="0px 0px 80px 0px">
+			<Box
+				quarkly-title="BestLive"
+				margin="0px 0px 10px 0px"
+				md-margin="0px 0px 80px 0px"
+				display="block"
+				flex-wrap="wrap"
+				justify-content="space-between"
+			>
 				<Text quarkly-title="Title" font="--t1" color="--black">
-					Лучшие эфиры
+					Подкастеры недели
 				</Text>
+				<Box display="flex" flex-wrap="wrap" justify-content="space-between">
+					<Components.TestCard />
+					<Components.TestCard />
+					<Components.TestCard />
+				</Box>
 				<Box>
 					<Stack
 						sm-flex-wrap="nowrap"
@@ -341,7 +365,6 @@ export default (() => {
 			/>
 			<Override slot="link3" width="50px" height="50px" />
 		</Components.NavBar>
-		<Box />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

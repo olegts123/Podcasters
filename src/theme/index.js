@@ -194,5 +194,5 @@ export default {
 			}
 		}
 	},
-	"version": 96
+	"version": 99
 }

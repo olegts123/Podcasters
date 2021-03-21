@@ -49,7 +49,7 @@ export default (() => {
 					Презентация Podcaster{"\n\n"}
 				</Text>
 				<Text quarkly-title="BroadcastDescription" font="--text" color="--fontGray">
-					Обсуждаем чебуреки. Ставьте  ❤, если любите с сыром, и ✌🏻 если любите с мясом{"\n\n"}
+					Презентация уникальной стриминговой платформы{"\n\n"}
 				</Text>
 			</Box>
 		</Section>
@@ -96,6 +96,41 @@ export default (() => {
 					sm-background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/_XwDijOPNLY.jpg?v=2021-03-21T08:44:58.597Z) 0 10%/100%"
 				/>
 			</Components.PodcasterCard>
+		</Section>
+		<Text md-padding="20px 30px 15px 30px" md-font="--t1">
+			Стикеры
+			<br />
+		</Text>
+		<Section quarkly-title="Buttons" md-padding="10px 0 10px 0">
+			<Override
+				slot="SectionContent"
+				md-width="100%"
+				md-height="auto"
+				md-min-height="250px"
+				md-padding="20px 20px 20px 20px"
+				md-flex-wrap="wrap"
+				md-flex-direction="row"
+				md-align-items="flex-start"
+				md-justify-content="space-between"
+			/>
+			<Components.StickerButton>
+				Стикер 1
+			</Components.StickerButton>
+			<Components.StickerButton>
+				Стикер 2
+			</Components.StickerButton>
+			<Components.StickerButton>
+				Стикер 3
+			</Components.StickerButton>
+			<Components.StickerButton>
+				Стикер 4
+			</Components.StickerButton>
+			<Components.StickerButton>
+				Стикер 5
+			</Components.StickerButton>
+			<Components.StickerButton>
+				Стикер 6
+			</Components.StickerButton>
 		</Section>
 		<Section quarkly-title="FooterSection">
 			<Box display="flex" justify-content="space-between">
