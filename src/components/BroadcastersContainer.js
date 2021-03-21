@@ -9,7 +9,7 @@ import ListenersSection from "./ListenersSection";
 import FooterListeners from "./FooterListeners";
 import FooterBroadcasters from "./Footer";
 
-const BroadcastersPanel = props => {
+const BroadcastersContainer = props => {
 	const [panel, setPanel] = useState("broadcasters");
 	console.log(panel);
 	return <div tabIndex="1" onClick={evt => {
@@ -43,8 +43,8 @@ const BroadcastersPanel = props => {
 	</div>;
 };
 
-export default atomize(BroadcastersPanel)({
-	name: "BroadcastersPanel",
+export default atomize(BroadcastersContainer)({
+	name: "BroadcastersContainer",
 	effects: {
 		hover: ":hover"
 	},
@@ -52,7 +52,7 @@ export default atomize(BroadcastersPanel)({
 	mixins: true,
 	description: {
 		// paste here description for your component
-		en: "BroadcastersPanel — my awesome component"
+		en: "BroadcastersContainer — my awesome component"
 	},
 	propInfo: {
 		// paste here props description for your component
