@@ -9,19 +9,8 @@ const defaultProps = {
 	"children": "Стикер 1"
 };
 const overrides = {};
-const items = [{
-	name: "airhorn"
-}, {
-	name: "boi"
-}, {
-	name: "bruh"
-}, {
-	name: "cricket"
-}, {
-	name: "wow"
-}];
 
-const StickerButtoneElement = props => {
+const StickerButton = props => {
 	const {
 		children,
 		rest
@@ -31,12 +20,8 @@ const StickerButtoneElement = props => {
 	</Button>;
 };
 
-const StickerButton = props => {
-	return <div></div>;
-};
-
 Object.assign(StickerButton, { ...Button,
 	defaultProps,
 	overrides
 });
-export default StickerButtoneElement;
+export default StickerButton;
