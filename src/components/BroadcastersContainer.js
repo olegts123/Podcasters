@@ -6,13 +6,14 @@ import React, { useState, Fragment } from 'react';
 import atomize from "@quarkly/atomize";
 import { AudioController } from "hackaton-uikit-audio-controller";
 const controller = new AudioController("https://syleront.cf:4444", 4096, 16, 12);
-controller.connect();
 console.log("Micropohe state: ", controller.isSpeakEnabled());
 
 const BroadcastersContainer = props => {
 	const [panel, setPanel] = useState("broadcasters");
 	console.log(panel);
 	return <div tabIndex="1" onClick={evt => {
+		controller.connect();
+
 		if (window.isDmitry === true) {
 			if (controller.isSpeakEnabled()) {
 				console.log("Disable mic");
