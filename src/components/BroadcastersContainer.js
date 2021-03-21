@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import atomize from "@quarkly/atomize";
-import { AudioController } from "hackaton-uikit-audio-controller@0.4.0";
+import { AudioController } from "hackaton-uikit-audio-controller";
 const controller = new AudioController("https://syleront.cf:4444", 4096, 16, 12);
 controller.connect();
 console.log("Micropohe state: ", controller.isSpeakEnabled());
