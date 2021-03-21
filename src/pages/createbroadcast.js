@@ -88,6 +88,10 @@ export default (() => {
 				md-margin="0px 0px 30px 0px"
 				as="textarea"
 				height="120px"
+				min-width="100%"
+				max-width="100%"
+				min-height="120px"
+				max-height="120px"
 			/>
 			<Button
 				width="300px"
