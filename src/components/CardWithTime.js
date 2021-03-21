@@ -1,6 +1,6 @@
 import React from "react";
 import { useOverrides } from "@quarkly/components";
-import { Box, Text } from "@quarkly/widgets";
+import { Text, Box } from "@quarkly/widgets";
 const defaultProps = {
 	"sm-width": "162px",
 	"sm-height": "auto",
@@ -30,10 +30,10 @@ const overrides = {
 			"lg-border-radius": "20%",
 			"height": "350px",
 			"border-radius": "20%",
-			"background": "#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2064.png?v=2021-03-21T00:17:18.652Z) -5px/115% no-repeat",
-			"lg-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2064.png?v=2021-03-21T00:17:18.652Z) -5px/110% no-repeat",
-			"md-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2065.png?v=2021-03-21T00:17:18.651Z) -5px/115% no-repeat",
-			"sm-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2068.png?v=2021-03-21T00:17:18.652Z) -3px/110% no-repeat"
+			"background": "#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/115% no-repeat",
+			"lg-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/110% no-repeat",
+			"md-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/110% no-repeat",
+			"sm-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -3px/110% no-repeat"
 		}
 	},
 	"box1": {
@@ -52,10 +52,23 @@ const overrides = {
 			"border-radius": "20%",
 			"position": "absolute",
 			"width": "100%",
-			"background": "--color-filterImage",
-			"lg-background": "--color-filterImage",
-			"md-background": "--color-filterImage",
-			"sm-background": "--color-filterImage"
+			"display": "flex",
+			"align-items": "center",
+			"justify-content": "flex-end",
+			"flex-direction": "column",
+			"background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /110% no-repeat scroll padding-box",
+			"lg-background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box",
+			"md-background": "rgba(255, 255, 255, 0.43) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0%/100% no-repeat",
+			"sm-background": "rgba(255, 255, 255, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0%/100% no-repeat"
+		}
+	},
+	"text": {
+		"kind": "Text",
+		"props": {
+			"color": "--black",
+			"font": "500 20px Roboto, sans-serif",
+			"margin": "16px 0px 25px 0px",
+			"children": "17 марта 19:00"
 		}
 	},
 	"box2": {
@@ -65,10 +78,11 @@ const overrides = {
 			"sm-display": "flex",
 			"sm-flex-direction": "column",
 			"sm-justify-content": "start",
-			"sm-align-items": "flex-start"
+			"sm-align-items": "flex-start",
+			"lg-background": "rgba(0, 0, 0, 0)"
 		}
 	},
-	"text": {
+	"text1": {
 		"kind": "Text",
 		"props": {
 			"sm-font": "normal 13px sans-serif",
@@ -81,13 +95,12 @@ const overrides = {
 			"lg-min-height": "14px",
 			"lg-font": "18px sans-serif",
 			"min-height": "18px",
-			"font": "24px sans-serif",
-			"children": <>
-				Почему никому невозможно верить{"\n\n"}
-			</>
+			"font": "--t2",
+			"color": "--black",
+			"children": "Вкус или интеллект"
 		}
 	},
-	"text1": {
+	"text2": {
 		"kind": "Text",
 		"props": {
 			"sm-height": "15px",
@@ -102,14 +115,12 @@ const overrides = {
 			"lg-min-height": "14px",
 			"min-height": "18ox",
 			"font": "20px sans-serif",
-			"children": <>
-				Так вышло{"\n\n"}
-			</>
+			"children": "Kuji podcast"
 		}
 	}
 };
 
-const Card = props => {
+const CardWithTime = props => {
 	const {
 		override,
 		children,
@@ -117,18 +128,20 @@ const Card = props => {
 	} = useOverrides(props, overrides, defaultProps);
 	return <Box {...rest}>
 		<Box {...override("box")}>
-			<Box {...override("box1")} />
+			<Box {...override("box1")}>
+				<Text {...override("text")} />
+			</Box>
 		</Box>
 		<Box {...override("box2")}>
-			<Text {...override("text")} />
 			<Text {...override("text1")} />
+			<Text {...override("text2")} />
 		</Box>
 		{children}
 	</Box>;
 };
 
-Object.assign(Card, { ...Box,
+Object.assign(CardWithTime, { ...Box,
 	defaultProps,
 	overrides
 });
-export default Card;
+export default CardWithTime;

@@ -1,6 +1,5 @@
 import React from "react";
 import Index from "pages/index";
-import Card from "pages/card";
 import Live from "pages/live";
 import Livebroadcast from "pages/livebroadcast";
 import Livebroadcastmembers from "pages/livebroadcastmembers";
@@ -23,7 +22,6 @@ export default () => (
         <Switch>
         			<Route exact path='/' component={Index}/>
 			<Route exact path='/index' component={Index}/>
-			<Route exact path='/card' component={Card}/>
 			<Route exact path='/live' component={Live}/>
 			<Route exact path='/livebroadcast' component={Livebroadcast}/>
 			<Route exact path='/livebroadcastmembers' component={Livebroadcastmembers}/>

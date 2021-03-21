@@ -40,7 +40,8 @@ export default {
 		"fontGray": "#777777",
 		"shadowActivePodcaster": "#FED851",
 		"black": "#000000",
-		"background": "#fcfcfc"
+		"background": "#fcfcfc",
+		"filterImage": "rgba(255, 193, 7, 0.43)"
 	},
 	"fontFamily": {
 		"sans": "-apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
@@ -60,9 +61,9 @@ export default {
 		"headline3": "normal 500 28px/1.2 --fontFamily-sans",
 		"base": "normal 300 16px/1.5 --fontFamily-sans",
 		"lead": "normal 300 20px/1.5 --fontFamily-sans",
-		"t1": "700 16px --fontFamily-googleRoboto",
-		"t2": "300 13px --fontFamily-googleRoboto",
-		"text": "12px --fontFamily-googleRoboto"
+		"t1": "700 30px --fontFamily-googleRoboto",
+		"t2": "450 24px --fontFamily-googleRoboto",
+		"text": "18px --fontFamily-googleRoboto"
 	},
 	"boxShadow": {
 		"m": "0 4px 5px -1px rgba(0, 0, 0, 0.1)",
@@ -184,5 +185,5 @@ export default {
 			}
 		}
 	},
-	"version": 19
+	"version": 77
 }

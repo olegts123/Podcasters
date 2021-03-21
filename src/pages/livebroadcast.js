@@ -33,7 +33,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					display="inline"
 					sm-margin="0px 0px 0 0px"
-					font="--lgHeadline1"
+					font="--t1"
 					lg-font="--lgHeadline2"
 					md-font="--lgHeadline3"
 				>
@@ -71,12 +71,23 @@ export default (() => {
 				justify-content="space-between"
 				height="800px"
 			/>
-			<Components.PodcasterCard sm-box-shadow="--podcastShadowActive" box-shadow="--podcastShadowActive" />
-			<Components.PodcasterCard>
-				<Override slot="text1" sm-display="block" display="block" />
+			<Components.PodcasterCard sm-box-shadow="--podcastShadowActive" box-shadow="--podcastShadowActive">
+				<Override slot="text">
+					Анастасия Ивлеева
+				</Override>
+				<Override slot="box" background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bbadfd5684fdbc4c0c1006cf1b9a9b7d.jpg?v=2021-03-21T00:33:25.501Z) top/100%" />
 			</Components.PodcasterCard>
-			<Components.PodcasterCard />
-			<Components.PodcasterCard />
+			<Components.PodcasterCard>
+				<Override slot="text" />
+				<Override slot="box" background="#838383 url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/square_320_bb4b277b65949db59997d7938661b118.jpg?v=2021-03-21T00:35:44.602Z) bottom/100%" />
+			</Components.PodcasterCard>
+			<Components.PodcasterCard>
+				<Override slot="text1" sm-display="block" display="block" font="--text" />
+				<Override slot="text">
+					Покемон Пикачу
+				</Override>
+				<Override slot="box" background="#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Ash_Pikachu.png?v=2021-03-21T00:43:20.111Z) 0% 0%/100% no-repeat" />
+			</Components.PodcasterCard>
 		</Section>
 		<Section quarkly-title="FooterSection">
 			<Box display="flex" justify-content="space-between">

@@ -7,7 +7,6 @@ export default {
 			"children": [
 				"6056093da1e3530020715a3c",
 				"6056093da1e3530020715a3e",
-				"60560fc0cb40ac001fc6079b",
 				"605623fcf2b826001ebe890c",
 				"60563842f2b826001ebe89fc",
 				"60563f0cf11f97001e812177",
@@ -23,11 +22,6 @@ export default {
 			"id": "6056093da1e3530020715a3e",
 			"name": "index",
 			"pageUrl": "index"
-		},
-		"60560fc0cb40ac001fc6079b": {
-			"id": "60560fc0cb40ac001fc6079b",
-			"pageUrl": "card",
-			"name": "card"
 		},
 		"605623fcf2b826001ebe890c": {
 			"id": "605623fcf2b826001ebe890c",
