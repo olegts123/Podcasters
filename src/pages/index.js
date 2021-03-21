@@ -81,7 +81,7 @@ export default (() => {
 						md-min-width="250px"
 					>
 						<Components.CardWithTime>
-							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /110% no-repeat scroll padding-box" />
+							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box" />
 						</Components.CardWithTime>
 						{"        "}{"    "}
 					</StackItem>
@@ -98,7 +98,7 @@ export default (() => {
 						md-min-width="250px"
 					>
 						<Components.CardWithTime>
-							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /110% no-repeat scroll padding-box" />
+							<Override slot="box1" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box" />
 						</Components.CardWithTime>
 						{"        "}{"    "}
 					</StackItem>

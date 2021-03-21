@@ -28,12 +28,13 @@ const overrides = {
 			"md-border-radius": "25%",
 			"lg-height": "300px",
 			"lg-border-radius": "20%",
-			"height": "350px",
 			"border-radius": "20%",
 			"background": "#ffffff url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/115% no-repeat",
 			"lg-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/110% no-repeat",
 			"md-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -5px/110% no-repeat",
-			"sm-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -3px/110% no-repeat"
+			"sm-background": "--color-background url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Rectangle%2069.png?v=2021-03-21T00:17:18.655Z) -3px/110% no-repeat",
+			"height": "349px",
+			"max-height": "349px"
 		}
 	},
 	"box1": {
@@ -54,12 +55,12 @@ const overrides = {
 			"width": "100%",
 			"display": "flex",
 			"align-items": "center",
-			"justify-content": "flex-end",
 			"flex-direction": "column",
-			"background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /110% no-repeat scroll padding-box",
 			"lg-background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box",
 			"md-background": "rgba(255, 255, 255, 0.43) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0%/100% no-repeat",
-			"sm-background": "rgba(255, 255, 255, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0%/100% no-repeat"
+			"sm-background": "rgba(255, 255, 255, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0%/100% no-repeat",
+			"justify-content": "flex-end",
+			"background": "rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/6056093da1e3530020715a39/images/Subtract.svg?v=2021-03-21T00:44:33.775Z) 0% 0% /100% no-repeat scroll padding-box"
 		}
 	},
 	"text": {

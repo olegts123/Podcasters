@@ -8,7 +8,8 @@ const pageStyles = {
     "live": {},
     "livebroadcast": {},
     "livebroadcastmembers": {},
-    "createbroadcast": {}
+    "createbroadcast": {},
+    "pageregistertranslation": {}
 };
 
 const PageStyles = createGlobalStyle`
