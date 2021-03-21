@@ -93,8 +93,14 @@ export default (() => {
 				<Box quarkly-title="AudioSticker">
 					<Icon category="md" icon={MdVolumeUp} />
 				</Box>
-				<Components.BroadcastButton sm-box-shadow="--podcasterShadow" box-shadow="--shadow">
-					<Override slot="box" box-shadow="--shadow" />
+				<Components.BroadcastButton
+					sm-box-shadow="--podcasterShadow"
+					box-shadow="--shadow"
+					height="40px"
+					width="150px"
+					background="#f8f8f8"
+				>
+					<Override slot="box" box-shadow="--shadow" height="30px" width="80px" />
 				</Components.BroadcastButton>
 				<Box quarkly-title="Sticker">
 					<Icon category="gi" icon={GiBulletImpacts} />
